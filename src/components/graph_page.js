@@ -1,6 +1,6 @@
 import React from 'react'
 import Chart from 'chart.js'
-import './graph.css'
+import '../css/graph.css'
 
 class Graph extends React.Component {
     chartRef = React.createRef();
