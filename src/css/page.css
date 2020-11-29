@@ -1,0 +1,24 @@
+.Header {
+    padding-left: 10vw;
+    padding-top: 7vh;
+    height: 21vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.Header * h1 {
+    font-size: 50px;
+    margin: auto;
+}
+
+body {
+    background-color:rgba(247, 243, 227, 1);
+}
+
+@media only screen and (max-width: 800px) {
+    .Header * h1 {
+        font-size: 30px;
+    }
+}
