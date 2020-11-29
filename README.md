@@ -1,3 +1,18 @@
+# WFN Stats Can Project
+
+This repository contains React components for the WFN Stats Can visualization project. 
+
+## Features
+
+* Select a percentile from the dropdown menu to see how much that percentile of Canadians earned
+* Hover over datapoints for additional info
+
+## Tech/Framework/Sources
+
+* React
+* Javascript
+* Statistics Canada
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
