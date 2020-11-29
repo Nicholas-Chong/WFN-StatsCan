@@ -52,7 +52,7 @@ class Page extends React.Component {
                     </div>
                 </div>
                 <div class='slider-text' style={{height: '7vh'}}>
-                    <Valueslider sections={options.length} sectionNum={sectionNum} value={'$' + value.toString()}/>
+                    <Valueslider sections={options.length} sectionNum={sectionNum} value={value}/>
                 </div>
                 <div>
                     <Graph selectedPercentile={this.state.selected} />
