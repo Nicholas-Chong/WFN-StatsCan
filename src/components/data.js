@@ -1,3 +1,8 @@
+/**
+ * This file contains various variables used to store data that is used by the 
+ * other components.
+ */
+
 var options = [
     {value: "5th Percentile", label: "5th "},
     {value: "10th Percentile", label: "10th"},

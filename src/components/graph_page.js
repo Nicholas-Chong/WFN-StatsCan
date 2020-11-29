@@ -8,13 +8,16 @@ class Graph extends React.Component {
     chartRef = React.createRef();
     
     componentDidMount() {
+        // Reference the chart
         const myChartRef = this.chartRef.current.getContext("2d");
 
+        // Create the gradient
         var gradient = myChartRef.createLinearGradient(0, 0, 0, 1000)
         gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
         gradient.addColorStop(0.60, 'rgba(255, 0, 0, 0.25)');
         gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
         
+        // Create custom chart tooltip positioner
         Chart.Tooltip.positioners.custom = function (elements, position) {
             var offset = 0
 
@@ -30,6 +33,7 @@ class Graph extends React.Component {
             }
         }
         
+        // Create the chart
         const c = new Chart(myChartRef, {
             plugins: [ChartAnnotation],
             type: "line",
@@ -97,6 +101,7 @@ class Graph extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
+        // If the props changed, update the chart annotation
         if (prevProps.selectedPercentile !== this.props.selectedPercentile) {
             var chart = Chart.instances[0]
             chart.options.annotation.annotations[0].value = this.props.selectedPercentile

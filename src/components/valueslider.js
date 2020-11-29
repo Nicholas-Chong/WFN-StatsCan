@@ -5,21 +5,20 @@ class Valueslider extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            width: window.innerWidth,
             sectionslen: window.innerWidth/this.props.sections
         }
+
+        // Bind handleResize to this (tf does this mean???)
         this.handleResize = this.handleResize.bind(this)
     }
 
-    width = window.innerWidth
-    sections = this.props.section
-    sectionslen = this.width/this.props.sections
-
     componentDidMount() {
+        // Sections len will be recalulated on window resize
         window.addEventListener('resize', this.handleResize)
     }
 
     handleResize() {
+        // Recalculate and setState
         this.setState({sectionslen: window.innerWidth/this.props.sections})
     }
 

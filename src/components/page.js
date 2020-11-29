@@ -9,12 +9,15 @@ import { options, values, percentiles } from './data'
 class Page extends React.Component {
     constructor(props) {
         super(props)
+
+        // Set default selected val
         this.state = {selected: '10th Percentile'}
     }
 
     dropdownRef = React.createRef();
 
     handleChange = (value) => {
+        // Set state.selected to newly selected value
         this.setState({selected: value.value})
     }
 
