@@ -13,6 +13,12 @@
     margin: auto;
 }
 
+.Dropdown {
+    width: 160px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 body {
     background-color:rgba(247, 243, 227, 1);
 }
@@ -20,5 +26,9 @@ body {
 @media only screen and (max-width: 800px) {
     .Header * h1 {
         font-size: 30px;
+    }
+
+    .Dropdown {
+        width: 100px;
     }
 }

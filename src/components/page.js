@@ -33,7 +33,7 @@ class Page extends React.Component {
                             The
                         </h1>
                     </div>
-                    <div style={{width: '160px', paddingLeft: '7px', paddingRight: '7px'}}>
+                    <div class='Dropdown'>
                         <Select
                             options={options}
                             className="react-select--inline"
@@ -45,7 +45,7 @@ class Page extends React.Component {
                             }}
                             onChange={this.handleChange} />
                     </div>
-                    <div>
+                    <div style={{marginRight: '10vw'}}>
                         <h1> 
                            percentile of Canadians earned:
                         </h1>

@@ -21,6 +21,7 @@
     min-height: none;
     cursor: pointer;
     background-color: transparent;
+    bottom: -3px
 }
 
 /* Tighten up spacing */
