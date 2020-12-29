@@ -13,6 +13,8 @@ This repository contains React components for the WFN Stats Can visualization pr
 * Javascript
 * Statistics Canada
 
+![](github/sample.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
